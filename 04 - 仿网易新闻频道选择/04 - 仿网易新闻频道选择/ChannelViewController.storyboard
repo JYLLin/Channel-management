@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CW4-yt-L5M">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Channel View Controller-->
+        <scene sceneID="AKj-s9-RCl">
+            <objects>
+                <viewController id="CW4-yt-L5M" customClass="ChannelViewController" customModule="_4___仿网易新闻频道选择" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NUh-6L-yKF"/>
+                        <viewControllerLayoutGuide type="bottom" id="XRu-Qj-wFO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jRu-1I-r4E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="orR-VP-Zkg"/>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="orR-VP-Zkg" firstAttribute="top" secondItem="NUh-6L-yKF" secondAttribute="bottom" id="9ym-eq-W4m"/>
+                            <constraint firstItem="XRu-Qj-wFO" firstAttribute="top" secondItem="orR-VP-Zkg" secondAttribute="bottom" id="mi7-bO-Y8R"/>
+                            <constraint firstAttribute="trailing" secondItem="orR-VP-Zkg" secondAttribute="trailing" id="nYF-9F-yq0"/>
+                            <constraint firstItem="orR-VP-Zkg" firstAttribute="leading" secondItem="jRu-1I-r4E" secondAttribute="leading" id="tNJ-U8-BNt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="orR-VP-Zkg" id="Un4-RM-1xH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sMf-bH-M5h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104.8" y="-83.208395802098963"/>
+        </scene>
+    </scenes>
+</document>
